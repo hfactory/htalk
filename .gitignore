@@ -1,0 +1,11 @@
+target/
+RUNNING_PID
+project/target/
+lib/
+bin/
+.classpath
+.project
+.history
+.settings/
+.cache
+.idea

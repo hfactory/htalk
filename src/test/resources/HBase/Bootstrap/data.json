@@ -1,0 +1,19 @@
+{
+    "table" : {
+        "name": "test-hild-forum",
+        "rows" : [
+        {
+            "id" : 1,
+            "c" : [
+                { "f" : "operando", "q" : "firstname", "v" : "Ghislain"},
+                { "f" : "operando", "q" : "lastname", "v" : "Mazars"}]
+        },
+        {
+            "id" : 100,
+            "c" : [
+                { "q" : "c1", "v" : 3456},
+                { "q" : "c2", "v" : 98776.9 }]
+        }]
+    
+    }
+}
