@@ -17,7 +17,8 @@ javaOptions ++= Seq("-source=1.8","-target=1.8")
 resolvers ++= Seq(
  "Apache HBase" at "https://repository.apache.org/content/repositories/releases",
  "Thrift" at "http://people.apache.org/~rawson/repo/",
- "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases"
+ "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases",
+ "Ubeeko" at "http://nexus.hfactory.io/nexus/content/repositories/releases/"
 )
 
 val hbaseVersion = "1.2.4"
@@ -59,11 +60,10 @@ testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oDF", "-w", "com.ubeek
 publishMavenStyle := true
 
 publishTo := {
-  val nexus = "http://nexus.ubeeko.com/"
+  val nexus = "http://nexus.hfactory.io/nexus"
   if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots/")
+    Some("snapshots" at nexus + "/content/repositories/snapshots/")
   else
-    Some("releases"  at nexus + "content/repositories/releases/")
+    Some("releases"  at nexus + "/content/repositories/releases/")
 }
-
-publishArtifact in Test := true
+//publishArtifact in Test := true
