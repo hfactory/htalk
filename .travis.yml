@@ -6,7 +6,7 @@ services:
   - docker
 before_script:
   - docker pull hfactory/hbase
-  - docker run -d -n hbase hfactory/hbase
+  - docker run -d --name hbase hfactory/hbase
   - docker inspect -f 'hbase.zookeeper.quorum={{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' hbase > src/test/resources/hbase-site-travis.properties
 after_script:
   - docker stop hbase
