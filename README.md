@@ -1,6 +1,8 @@
 HTalk
 =====
 
+[![Build Status](https://travis-ci.org/eric-leblouch/htalk.svg?branch=master)](https://travis-ci.org/eric-leblouch/htalk)
+
 Build
 -----
 
