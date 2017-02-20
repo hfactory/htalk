@@ -1,0 +1,12 @@
+language: scala
+jdk:
+  - oraclejdk8
+sudo: required
+services:
+  - docker
+before_script:
+  - docker pull hfactory/hbase
+  - docker run -d --net=host --name hbase hfactory/hbase
+after_script:
+  - docker stop hbase
+  - docker rm hbase
