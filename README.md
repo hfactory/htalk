@@ -1,7 +1,7 @@
 HTalk
 =====
 
-[![Build Status](https://travis-ci.org/eric-leblouch/htalk.svg?branch=master)](https://travis-ci.org/eric-leblouch/htalk)
+[![Build Status](https://travis-ci.org/hfactory/htalk.svg?branch=master)](https://travis-ci.org/hfactory/htalk)
 
 Build
 -----
